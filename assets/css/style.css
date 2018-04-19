@@ -1,81 +1,125 @@
-.topnav {
+.navBanner {
+    width: 100%;
+    height: 90px;
     background-color: #ffffff;
     border-bottom: 2px solid #cccccc;
+    margin: 0;
+    padding: 0;
     position: sticky;
     top: 0;
+}
+
+/* Navbar Container */
+.navbarContainer {
+    position: relative;
     width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Navbar */
+.topnav {
+    background-color: #ffffff;
+    position: relative;
+        top: 0;
+        left: 0;
+    width: 960px;    
+    margin: 0;
+    padding: 0;
     display: inline-block;
     text-align: center;
-    margin: 0;}
+    list-style-type: none;
+}
 
+/* Navbar Name*/
 .topnav h1 {
     float: left;
     color: #ffffff;
     background: #4aaaa5;
-    padding: 25px 16px;
+    position: absolute;
+        top: -17px;
+        left: 0;
+    padding: 34px 16px;
     text-align: center;
-    font-size: 17px;    
+    font-size: 20px;  
     font-family: Georgia, 'Times New Roman', Times, serif;
-    position: relative;
-    margin: 0;}
+}
 
+/* Navbar Page Links */
 .topnav a {
     float: right;
     display: block;
-    color: #777777;
-    text-align: center;
     padding: 0px 16px;
     margin-top: 14px;
+    border-right: 1px solid #777777; 
+    color: #777777;
+    text-align: center;   
     text-decoration: none;
     font-size: 14px;
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-    border-right: 1px solid #777777;}
-
-#lastOne {
-    border-right: none;}
-
-.topnav a:hover {
-    background-color: #ddd;
-    color:black;}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;}
+}
 
 li {
     display: inline;}
 
-body {
+#lastOne {
+    border-right: none;}
+
+/* Navbar Hover Feature */
+.topnav a:hover {
+    background-color: #ddd;
+    color:black;
+}
+
+body {    
     background-image: url("../images/background.png");
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-    width: 960px;
-    margin: 0 auto;}
+}
 
-.bio {
+.mainBody {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.bio, .contactSection {
     background: white;
     padding: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
     border: 2px solid #dddddd;
-    border-width: thin;}
+    border-width: thin;
+}
 
-.aboutMe {
-    color:#4aaaa5;}
+.aboutMe, .contactHeader {
+    color:#4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 hr {
     border: none;
     height: 2px;
     color: #aaa8a8;
     background-color: #aaa8a8;
-    margin-bottom: 20px;}
+    margin-bottom: 20px;
+}
 
 .profilepic {
     float: left;
     margin-right: 20px;
-    margin-bottom: 20px;}
+    margin-bottom: 20px;
+}
 
 .clearfix::after {
     content: "";
     display:block;
-    clear:both;}
+    clear:both;
+}
+
+input[type=submit] {
+    color: #ffffff;
+    background: #4aaaa5;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    float: left;
+    font-size: 17px;}
