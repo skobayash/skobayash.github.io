@@ -81,7 +81,9 @@ body {
     margin: 0 auto;
 }
 
-.bio, .contactSection {
+.bio, 
+.contactSection,
+.portfolioBod {
     background: white;
     padding: 20px;
     margin-top: 30px;
@@ -90,7 +92,9 @@ body {
     border-width: thin;
 }
 
-.aboutMe, .contactHeader {
+.aboutMe, 
+.contactHeader,
+.portfolioHeader {
     color:#4aaaa5;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -123,3 +127,30 @@ input[type=submit] {
     cursor: pointer;
     float: left;
     font-size: 17px;}
+
+.portfolioContainer {
+    width: 700px;
+}
+
+img {
+    float: left;
+    margin: 15px;
+}
+
+.plabel {
+    background: #4aaaa5;
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+    width: 300px;
+    height: 70px;
+    position: absolute;
+    left: 15px;
+    bottom: 30px;
+}
+
+.imgContainer {
+    float: left;
+    width: 315px;
+    position: relative;
+}
