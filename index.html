@@ -4,62 +4,102 @@
 <head>
   <meta charset="UTF-8">
   <title>About Sophie</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/bsstyle.css">
+
 </head>
 
-<body>
+<body> 
 
-    <!-- Navbar -->
-<header class="navBanner">
-    <div class="navbarContainer">
-        <nav class="topnav">
-            <ul>
-                <li><h1 class="myName">Sophie Obayashi</h1></li>
-                <li><a id="lastOne" href="contact.html">Contact</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a class="active" href="index.html">About Me</a></li>
-            </ul>  
-        </nav>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="navbarWidth">
+        <a class="navbar-brand" href="#">
+            <h2 style="color: #ffffff; background:#4aaaa5; padding:15px 15px;">Sophie Obayashi</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+            </ul>
+        </div>
     </div>
-</header>
+</nav>
 
+<!-- Background image -->
+<section class="view intro-2 hm-gradient">
+    <div class="bg">
+
+<br><br>
 
 <!-- Main Content -->
-<div class="mainBody">    
-    <section class="bio">
-        <h1 class="aboutMe">About Me</h1>
-        <br>
-        
-        <hr />
-        
-        <div class="profilepic">
-            <img src="assets/images/profile.jpg" alt="Sophie's Profile"/>
+<div class="container">
+    <!-- Header -->
+    <div class="row">
+        <div class="col-md">
+            <br>
+            <h1>About Me</h1>
+            <hr />
         </div>
-        
-        <div class="writtenBio clearfix">
-            <p>Sophie is an aspiring programmer living in the San Francisco Bay Area.  
-                She recently moved here from NYC where she was working at a french bakery. She is a recent Oberlin College 
-                graduate with a Bachelor’s of Arts in Neuroscience and a minor in Creative Writing. </p> <br>
-            <p>Sophie is attending the UC Berkeley Coding Boot Camp where she will be developing 
-                her programming skills for the next three months. After completion of this course, 
-                she hopes to use and build on her knowledge of programming in a way that overlaps 
-                with promoting scientific research. She is also interested in working as a web developer 
-                for organizations that promote and boost visibility of the Asian American Diaspora 
-                and marginalized communities.</p> <br>
-            <p>Some other things Sophie likes include: hiking, memes, neuroscience, poetry, 
-                dark stout and german beers, and her dog.</p>
-            <p>She also likes snowboarding and, largely related, the idea of not having a broken wrist anymore.</p>
-            <br><br>                  
+    </div>
+    
+
+    <div class="row">
+            <div class="row">
+                <div class="col-md-4">
+                    <br>
+                    <img src="assets/images/profile.jpg" alt="Sophie's Profile" class="img-responsive"/>
+                </div>
+                <div class="col-md-8 writtenBio">
+                        <br>
+                        <p>Sophie is an aspiring programmer living in the San Francisco Bay Area.  
+                            She recently moved here from NYC where she was working at a french bakery. She is a recent Oberlin College 
+                            graduate with a Bachelor’s of Arts in Neuroscience and a minor in Creative Writing. </p> <br>
+                        <p>Sophie is attending the UC Berkeley Coding Boot Camp where she will be developing 
+                            her programming skills for the next three months. After completion of this course, 
+                            she hopes to use and build on her knowledge of programming in a way that overlaps 
+                            with promoting scientific research. She is also interested in working as a web developer 
+                            for organizations that promote and boost visibility of the Asian American Diaspora 
+                            and marginalized communities.</p>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-md-12">
+                        <br>
+                        <p>Some other things Sophie likes include: hiking, memes, neuroscience, poetry, 
+                                dark stout and german beers, and her dog. She also likes snowboarding and, largely related, the idea of not having a broken wrist anymore.</p><br>
+                </div>
+            </div>
         </div>
-      
 
-    </section>
-</div>
 
-<!-- Footer -->
-<div class="footer">
 </div>
+<br><br>
+
+<!-- End Main Content -->
+</div>
+<br>
+
+<!-- End background image -->
+</div>
+</section>
+
+<!-- Footer Bar -->
+<div class="bg-dark"></div>
+
+
 
 
 

@@ -2,60 +2,91 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Contact Sophie</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bsstyle.css">
 </head>
 
 <body>
 
-    <!-- Navbar -->
-    <header class="navBanner">
-        <div class="navbarContainer">
-        <nav class="topnav">
-            <ul>
-                <li><h1 class="myName">Sophie Obayashi</h1></li>
-                <li><a id="lastOne" href="contact.html">Contact</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a class="active" href="index.html">About Me</a></li>
-            </ul>  
-        </nav>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="navbarWidth">
+        <a class="navbar-brand" href="#">
+            <h2 style="color: #ffffff; background:#4aaaa5; padding:15px 15px;">Sophie Obayashi</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+            </ul>
         </div>
-    </header>
+    </div>
+</nav>
+  
+
+<section class="view intro-2 hm-gradient">
+    <div class="bg">
+    
+<br><br>
 
 
-<!-- Main Body -->
-<div class="mainBody">    
-    <section class="contactSection">
-        <h1 class="contactHeader">Contact</h1>
-        <hr />
-
-        <!-- Form Elements -->
-        <div class="formElements clearfix">
-            <form action=”#” method: "post">
-                <p>Name <br />
-                    <input type=”text” name=”name” style="margin: 0px;width: 100%;height: 24px;" />
-                </p><br>
-                <p>Email <br />
-                    <input type=”text” name=”email” style="margin: 0px;width: 100%;height: 24px;" />
-                </p><br>
-                <p>Message <br />
-                    <textarea name=”message” style="margin: 0px;width: 100%;height: 200px;"></textarea>
-                </p><br>
-                <input type="submit" class:"submitButton" value="Submit">
-            </form>   
+<!-- Main Content -->
+<div class="container">
+    <!-- Header -->
+    <div class="row">
+        <div class="col-md">
+            <br>
+            <h1>Contact</h1>
+            <hr />
+            <br>
         </div>
+    </div>    
 
-    </section>
 
+    <form action="/action_page.php">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="name" class="form-control" id="name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+            <label for="comment">Message</label>
+            <textarea class="form-control" rows="5" id="message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-info">Submit</button>
+      </form>
+      <br>
+
+
+<!-- End Main Content -->
 </div>
+<br>
 
-
-<!-- Footer -->
-<div class="footer">
-        <p></p>
+<!-- End background image -->
 </div>
+</section>
+
+<!-- Footer Bar -->
+<div class="bg-dark"></div>
+
+
+
 
 
 </body>
